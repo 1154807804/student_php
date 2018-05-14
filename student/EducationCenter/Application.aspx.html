@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+档案袋评定系统</title>
+<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.sfbox {
+				width: 100%;
+				height: 455px;
+				/*background: red;*/
+				margin: 0 auto;
+				padding-top: 20px;
+			}
+			
+			.sfbox .con {
+				/*width: 400px;*/
+				width: auto;
+				height: 455px;
+				border-bottom: 1px solid #0561A2;
+				float: left;
+			}
+			.sfbox .con .title{
+				width: 54px;
+				height: 455px;
+				float: left;
+				cursor: pointer;
+				border-right: solid 1px #0561A2;
+				background: url(gl_02_77097a1.png);	
+				padding: 20px 10px;
+				box-sizing: border-box;
+				border-bottom: 1px solid #0561A2;
+				border-top: solid 1px #0561A2;
+				background: url(../Images/ccc.jpg);
+			}
+			.sfbox .con .title p{
+				font-size: 20px;
+				font-family: "kaiti";
+				color: #185697;
+			}
+			.sfbox .con .content {
+				width: 0px;
+				height: 455px;
+				padding-top: 20px;
+				text-align: center;
+				line-height: 400px;
+				float: right;
+				transition: width 0.5s ease;
+				background: url(../Images/sfqbg2.jpg);
+			}
+			.sfbox .con .content p{
+				height: 40px;
+				font-size: 23px;
+				text-align: left;
+				font-family: "kaiti";
+			}
+			 .sfbox .top{
+			 	width: 446px;
+			 	height: 50px;
+			 	/*background: red;*/
+			 }
+			 .sfqnow{
+			 	background: #6DB1E0;
+			 }
+		</style>
+<link href="../Style/StudentStyle.css" rel="stylesheet" type="text/css" /><link href="../Script/jBox/Skins/Blue/jbox.css" rel="stylesheet" type="text/css" /><link href="../Style/ks.css" rel="stylesheet" type="text/css" />
+    <script src="../Script/jBox/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="../Script/jBox/jquery.jBox-2.3.min.js" type="text/javascript"></script>
+    <script src="../Script/jBox/i18n/jquery.jBox-zh-CN.js" type="text/javascript"></script>
+    <script src="../Script/Common.js" type="text/javascript"></script>
+    <script src="../Script/Data.js" type="text/javascript"></script>
+    <link href="../Style/StudentStyle.css" rel="stylesheet" type="text/css" />
+    <script src="../Script/Base.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+    <div class="banner">
+        <div class="bgh">
+            <div class="page">
+                <div class="topxx">
+
+                    <a href="../User/Account/ChangePasswd.aspx.html">密码修改</a> 
+                    <a onclick="location.href='../../loginb.html'" style="cursor: pointer;">安全退出</a>
+                </div>
+                <div class="blog_nav">
+                    <ul>
+                        <li><a href="../Index.html"> 个人中心</a></li><!--我的信息 -->
+                        <li><a href="../EducationCenter/Score.aspx.html">我的课程</a></li><!--教务中心-->
+                        <li><a href="../evaluate/evaluateme.php">我的评价</a></li><!--我的学费-->
+                        <li><a href="../MyAccount/liuyanban.html">留言板</a></li><!--资料中心-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="box mtop">
+             <div class="leftbox">
+                <div class="l_nav2">
+                    <div class="ta1">
+                        <strong>个人中心</strong>
+                        <div class="leftbgbt">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../MyInfo/Index.aspx.html">我的信息</a></div>
+                        <div>
+                            <a href="../MyInfo/ClassInfo.aspx.html">班级信息 </a>
+                        </div>
+                        <div>
+                            <a href="../User/StudentInfor/Letter.aspx.html">短信息</a></div>
+                        <div>
+                            <a href="../User/StudentInfor/systemMsge.aspx.php">通知</a></div>
+                        <div>
+                            <a href="../MyInfo/Objection.aspx.html">我的作品</a></div>
+                        
+                    </div>
+                    <div class="ta1">
+                        <strong>课程中心</strong>
+                        <div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../EducationCenter/Application.aspx.html">我的课程</a></div>
+                        <div>
+                            <a href="../EducationCenter/Score.aspx.html">章节测试</a></div>
+                        <div>
+                            <a href="../EducationCenter/Book.aspx.html">我的成绩</a></div>
+                            <div><a href="../OnlineTeaching/StudentMaterial.aspx.html">资料下载</a></div>
+                    </div>
+                    <div class="ta1">
+                        <strong>评价中心</strong><div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../evaluate/EvaluateTable.html">表现性评价量表</a></div>
+                        <div>
+                            <a href="../evaluate/evaluateme.php">作品评价</a></div>
+                    </div>
+                   
+                    <div class="ta1">
+                        <strong>留言中心</strong><div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../historyinfo/historyinfo.html">历史留言信息</a></div>
+                    </div>
+<div class="ta1">
+                        <a href="http://eip.imnu.edu.cn/EIP/" target="_blank"><strong>教学系统</strong></a>
+                        <div class="leftbgbt2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+                
+    <h2 class="mbx">
+        课程中心&gt; 我的课程</h2>
+    <div class="morebt" style="margin-top: -20px;">
+        <ul>
+            <li><a class="tab1" href="Application.aspx.html">我的课程</a></li>
+            <li><a class="tab2" href="Score.aspx.html">章节测试</a></li>
+            <li><a class="tab2" href="Book.aspx.html">我的成绩</a></li>
+            
+        </ul>
+    </div>
+
+    <!--手风琴的box-->
+    <div class="sfbox">
+			<div class="con">
+				<div class="title">
+					<p>
+						第一章
+					中学信息技术课程教学设计概论
+					</p>
+					
+				</div>
+				<div class="content" style="width: 446px;">
+					<p>第一节 中学信息技术教学设计的内涵</p>
+					<p>第二节 中学信息技术教学设计的过程模式</p>
+					<p>第三节 高中信息技术教学设计经典案例剖析</p>
+				</div>
+			</div>
+			<div class="con">
+				<div class="title first">
+					<p>
+						第二章
+						中学信息技术课程学习者分析
+					</p>
+				</div>
+				<div class="content">
+					<p>第一节 中学信息技术课程学习者分析的内涵</p>
+					<p>第二节 中学信息技术课程学习者分析要素</p>
+					<p>第三节 学习者分析的方法与案例剖析</p>
+				</div>
+			</div>
+			<div class="con">
+				<div class="title" >
+					<p>
+						第三章
+						 中学信息技术课程教学目标的编写
+					</p>
+				</div>
+				<div class="content">
+					<p>第一节 中学信息技术课程教学目标的内涵与功能</p>
+					<p>第二节 中学信息技术课程目标的分类</p>
+					<p>第三节 中学信息技术课程目标的编写</p>
+				</div>
+			</div>
+			<div class="con">
+				<div class="title" >
+					<p>
+						第四章
+						中学信息技术课程教学内容分析
+					</p>
+				</div>
+				<div class="content">
+					<p>第一节 教学内容分析概述</p>
+					<p>第二节 中学信息技术课程的内容分析</p>
+					<p>第三节 中学信息技术课程内容案例分析</p>
+				</div>
+			</div>
+			<div class="con">
+				<div class="title" >
+					<p>
+						第五章
+						中学信息技术课程教学方法的选择
+					</p>
+				</div>
+				<div class="content">
+					<p>第一节 教学方法概述</p>
+					<p>第二节 中学信息技术课程教学方法的确定</p>
+					<p>第三节 中学信息技术课程常用教学方法的案例分析</p>
+				</div>
+			</div>
+			<div class="con">
+				<div class="title" >
+					<p>
+						第六章
+						中学信息技术课程教学评价
+					</p>
+				</div>
+				<div class="content">
+					<p>第一节 教学评价概述</p>
+					<p>第二节 中学信息技术课程教学评价</p>
+					<p>第三节 中学信息技术课程教学评价常用的三种方法</p>
+				</div>
+			</div>
+			<div class="con">
+				<div class="title"  border: none;">
+					<p>
+						第七章
+						 中学信息技术课程资源校本课程开发
+					</p>
+				</div>
+				<div class="content">
+					<p>第一节 中学信息技术课程资源概述</p>
+					<p>第二节 中学信息技术课程资源的利用与开发</p>
+					<p>第三节 中学信息技术课程的开发</p>
+				</div>
+			</div>
+		</div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                &copy;copyright 2018 MTYHF  版权所有</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+			window.onload=function(){
+				var boxs=document.getElementsByClassName("title");
+				var con=document.getElementsByClassName("content");
+				var len=boxs.length;
+				for(var i=0;i<len;i++){
+					boxs[i].index= i
+					boxs[i].onclick=function(){
+						for(var j=0;j<len;j++){
+							con[j].style.width=0+"px";
+//							boxs[i].classList.remove("sfqnow");
+						}
+						con[this.index].style.width=446+"px"
+					}
+		
+				}
+			}
+		</script>
+</html>

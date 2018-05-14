@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	档案袋评定系统
+	
+</title>
+	<link href="../Style/StudentStyle.css" rel="stylesheet" type="text/css" />
+	<link href="../Script/jBox/Skins/Blue/jbox.css" rel="stylesheet" type="text/css" />
+	<link href="../Style/ks.css" rel="stylesheet" type="text/css" />
+    <style>
+    	td input{
+    		width: 100%;
+    		height: 100%;
+    		border: none;
+    	}
+    	.submit{
+    		width: 100px;
+    		height: 40px;
+    		font-size: 20px;
+    		background: #cfe1f9 ;
+    		font-family: "kaiti";
+    		float: right;
+    		margin-top: 20px;
+    		color: #185697;
+    	}
+    	.submit_tip{
+    		color: red;
+    		float: left;
+    		margin-top: 30px;
+    	}
+    </style>
+  
+    <script src="../Script/Base.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+    <div class="banner">
+        <div class="bgh">
+            <div class="page">
+                <div class="topxx">
+<a href="../User/Account/ChangePasswd.aspx.html">密码修改</a> <a onclick="location.href='../../loginb.html'" style="cursor: pointer;">安全退出</a>
+                </div>
+                <div class="blog_nav">
+                    <ul>
+                        <li><a href="../Index.html"> 个人中心</a></li><!--我的信息 -->
+                        <li><a href="../EducationCenter/Score.aspx.html">我的课程</a></li><!--教务中心-->
+                        <li><a href="../evaluate/evaluateme.php">我的评价</a></li><!--我的学费-->
+                        <li><a href="../MyAccount/liuyanban.html">留言板</a></li><!--资料中心-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="box mtop">
+            <div class="leftbox">
+                <div class="l_nav2">
+                    <div class="ta1">
+                        <strong>个人中心</strong>
+                        <div class="leftbgbt">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../MyInfo/Index.aspx.html">我的信息</a></div>
+                        <div>
+                            <a href="../MyInfo/ClassInfo.aspx.html">班级信息 </a>
+                        </div>
+                        <div>
+                            <a href="../User/StudentInfor/Letter.aspx.html">短信息</a></div>
+                        <div>
+                            <a href="../User/StudentInfor/systemMsge.aspx.php">通知</a></div>
+                        <div>
+                            <a href="../MyInfo/Objection.aspx.html">我的作品</a></div>
+                    </div>
+                    <div class="ta1">
+                        <strong>课程中心</strong>
+                        <div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../EducationCenter/Application.aspx.html">我的课程</a></div>
+                        <div>
+                            <a href="../EducationCenter/Score.aspx.html">章节测试</a></div>
+                        <div>
+                            <a href="../EducationCenter/Book.aspx.html">我的成绩</a></div>
+                            <div><a href="../OnlineTeaching/StudentMaterial.aspx.html">资料下载</a></div>
+                    </div>
+                    <div class="ta1">
+                        <strong>评价中心</strong><div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../evaluate/EvaluateTable.html">表现性评价量表</a></div>
+                        <div>
+                            <a href="../evaluate/evaluateme.php">作品评价</a></div>
+                    </div>
+                   
+                    <div class="ta1">
+                        <strong>留言中心</strong><div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../historyinfo/historyinfo.html">历史留言信息</a></div>
+                    </div>
+<div class="ta1">
+                        <a href="http://eip.imnu.edu.cn/EIP/" target="_blank"><strong>教学系统</strong></a>
+                        <div class="leftbgbt2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rightbox">
+                
+    <h2 class="mbx">
+        评价中心 &gt; 表现性评价量表</h2>
+    <div class="morebt">
+        <ul>
+             <li><a class="tab1" href="Application.aspx.html">表现性评价量表</a></li>
+        </ul>
+    </div>
+    <div class="cztable">
+        <div class="tis red">
+            请根据要求，认真填写评价量表
+        <form> 
+	        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="color: black;">
+	          <tr>
+	          	<th width="10%">评价项目</th>
+	          	<th colspan="2" width="10%">权重</th>
+	          	<th width="50%">评价要点</th>
+	          	<th width="10%">学生自评</th>
+	          	<th width="10%">组内成员互评</th>
+	          	<th width="10%">教师评价</th>
+	          </tr>
+	          <tr>
+	          	<td rowspan="5">学习态度</td>
+	          	<td  rowspan="5">25</td>
+	          	<td>5</td>
+	          	<td>遵守课堂纪律，学生状态积极，做好学习准备</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>5</td>
+	          	<td>积极参与实践活动，能发现并提出问题，能主动分析问题，并能积极思考(创新能力)</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>5</td>
+	          	<td>能有效组织，利用时间，成员合作密切，愉快</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>5</td>
+	          	<td>能在活动中，研究态度认真，有毅力</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>5</td>
+	          	<td>尊重教师和小组成员，积极为小组主题开展而努力</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td rowspan="6">学习结果</td>
+	          	<td  rowspan="6">60</td>
+	          	<td>12</td>
+	          	<td>能根据问题确定信息需求和信息来源，并选择恰当的方法获取信息</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>12</td>
+	          	<td>能掌握网络信息检索的几种主要策略和技巧</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>12</td>
+	          	<td>掌握信息价值判断的基本方法，学会鉴别与评价信息</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>12</td>
+	          	<td>能利用现代信息交流渠道广泛的开展合作，解决生活和学习中的问题</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>12</td>
+	          	<td>不利于网络做与学习无关的事</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>12</td>
+	          	<td>能在给定的时间内完成任务（两课时）</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td rowspan="4">遵守道德和法律</td>
+	          	<td  rowspan="4">15</td>
+	          	<td>4</td>
+	          	<td>不发布虚假或涉及黄，赌，毒等有害他人身心健康的信息</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>4</td>
+	          	<td>保护他人知识产权</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>4</td>
+	          	<td>不做危害计算机信息网络安全的事</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	          <tr>
+	          	<td>4</td>
+	          	<td>不故意损坏公共机房设施</td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          	<td><input type="text"></td>
+	          </tr>
+	        </table>
+	        <!--提交评价信息-->
+	        <p class="submit_tip">确认信息无误后，点击提交。</p>
+	        <button class="submit" type="submit">提交</button>
+        </form>
+    </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                &copy;copyright 2018 MTYHF  版权所有</p>
+        </div>
+    </div>
+</body>
+</html>

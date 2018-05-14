@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class=" js csstransforms3d"><head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>修改密码</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/page.css">
+	<!--[if lte IE 8]>
+	<link href="css/ie8.css" rel="stylesheet" type="text/css"/>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body style="background: #f6f5fa;">
+	<div class="super-content">
+		<div class="superCtab">
+			<div class="publishArt">
+				<h4>修改密码</h4>
+				<form method="post" action="change_psw.php">
+					<div class="pubMain">
+						<h5 class="pubtitle">用户名：Admin</h5>
+						<div class="pub-txt-bar">
+							<input type="hidden" name="id" value="<?php echo $id;?>">
+						</div>
+						<h5 class="pubtitle">原密码</h5>
+						<div class="pub-txt-bar">
+							<input id="mpass" name="mpass" type="password" class="shuruTxt shuruTxt2" placeholder="请输入原始密码" data-validate="required:请输入原始密码">
+						</div>
+						<h5 class="pubtitle">新密码<span></span></h5>
+						<div class="pub-txt-bar">
+							<input id="newpass" name="newpass" type="password" class="shuruTxt shuruTxt2" placeholder="请输入新密码" data-validate="required:请输入新密码,length#>=5:新密码不能小于5位">
+						</div>
+						<h5 class="pubtitle">确认新密码</h5>
+						<div class="pub-txt-bar">
+							<input id="renewpass" name="renewpass" type="password" class="shuruTxt shuruTxt2" placeholder="请再次输入新密码" data-validate="required:请再次输入新密码,repeat#newpass:两次输入的密码不一致">
+						</div>
+						<div class="pub-btn">
+							<input type="submit" name="Submit" onClick="return check();" id="" value="提交" class="saveBtn">
+						</div>
+					</div>
+				</form>
+			</div>
+		
+		</div>
+		<!--main-->
+	</div>
+	<!--content E-->
+	<script type="text/javascript">
+		  function checkspace(checkstr) {
+		    var str = '';
+		    for(i = 0; i < checkstr.length; i++) {
+		      str = str + ' ';
+		    }
+		    return (str == checkstr);
+		  }
+		  function check()
+		  {
+		    if(checkspace(document.renpassword.password.value)) {
+		      document.renpassword.password.focus();
+		      alert("原密码不能为空！");
+		      return false;
+		    }
+		    if(checkspace(document.renpassword.password1.value)) {
+		      document.renpassword.password1.focus();
+		      alert("新密码不能为空！");
+		      return false;
+		    }
+		    if(checkspace(document.renpassword.password2.value)) {
+		      document.renpassword.password2.focus();
+		      alert("确认密码不能为空！");
+		      return false;
+		    }
+		    if(document.renpassword.password1.value != document.renpassword.password2.value) {
+		      document.renpassword.password1.focus();
+		      document.renpassword.password1.value = '';
+		      document.renpassword.password2.value = '';
+		      alert("新密码和确认密码不相同，请重新输入");
+		      return false;
+		    }
+		    document.admininfo.submit();
+		  }
+	</script>
+
+
+</body></html>

@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	档案袋评定系统
+	
+</title>
+	  <script src="../Script/jquery-1.4.1.js"></script>
+	  <script src="../Script/wow.js"></script>
+<link rel="stylesheet" type="text/css" href="../Style/swiper.css"/>
+<link rel="stylesheet" type="text/css" href="../Style/animate.css"/>
+		<script>
+		    /*判断当前浏览器不是IE6 7 8 9 的时候 执行这句js*/
+		    //    console.log(navigator.userAgent);
+		    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		        new WOW().init();
+		    }
+		</script>
+<style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /*background: #fff;*/
+     background: url(../Images/liuyan2.jpg);
+     background-size: cover;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      
+      height: 350px;
+      margin-top: 40px;
+    }
+    .fix{
+    	position: fixed !important;
+    	left: 185px;
+   		/*top: 125px;*/
+   		top: 50px;
+    }
+    .sw_top{
+    	height: 40px;
+    	line-height: 40px;
+    	font-size: 25px;
+    	font-family: "楷体";
+    	width: 100%;
+    	text-align: center;
+    	padding-top: 20px;
+    }
+  </style>
+<link href="../Style/StudentStyle.css" rel="stylesheet" type="text/css" />
+<link href="../Script/jBox/Skins/Blue/jbox.css" rel="stylesheet" type="text/css" />
+<link href="../Style/ks.css" rel="stylesheet" type="text/css" />
+    <link href="../Style/StudentStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+
+    <div class="banner">
+        <div class="bgh">
+            <div class="page">
+                <div class="topxx">
+                    
+                    <a href="../User/Account/ChangePasswd.aspx.html">密码修改</a> 
+                    <a onclick="location.href='../../loginb.html'" style="cursor: pointer;">安全退出</a>
+                </div>
+                <div class="blog_nav">
+                    <ul>
+                        <li><a href="../Index.html"> 个人中心</a></li><!--我的信息 -->
+                        <li><a href="../EducationCenter/Score.aspx.html">我的课程</a></li><!--教务中心-->
+                        <li><a href="../evaluate/evaluateme.php">我的评价</a></li><!--我的学费-->
+                        <li><a href="../MyAccount/liuyanban.html">留言板</a></li><!--资料中心-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="box mtop">
+             <div class="leftbox">
+                <div class="l_nav2">
+                    <div class="ta1">
+                        <strong>个人中心</strong>
+                        <div class="leftbgbt">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../MyInfo/Index.aspx.html">我的信息</a></div>
+                        <div>
+                            <a href="../MyInfo/ClassInfo.aspx.html">班级信息 </a>
+                        </div>
+                        <div>
+                            <a href="../User/StudentInfor/Letter.aspx.html">短信息</a></div>
+                        <div>
+                            <a href="../User/StudentInfor/systemMsge.aspx.php">通知</a></div>
+                        <div>
+                            <a href="../MyInfo/Objection.aspx.html">我的作品</a></div>
+                        
+                    </div>
+                    <div class="ta1">
+                        <strong>课程中心</strong>
+                        <div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../EducationCenter/Application.aspx.html">我的课程</a></div>
+                        <div>
+                            <a href="../EducationCenter/Score.aspx.html">章节测试</a></div>
+                        <div>
+                            <a href="../EducationCenter/Book.aspx.html">我的成绩</a></div>
+                            <div><a href="../OnlineTeaching/StudentMaterial.aspx.html">资料下载</a></div>
+                    </div>
+                    <div class="ta1">
+                        <strong>评价中心</strong><div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../evaluate/EvaluateTable.html">表现性评价量表</a></div>
+                        <div>
+                            <a href="../evaluate/evaluateme.php">作品评价</a></div>
+                    </div>
+                   
+                    <div class="ta1">
+                        <strong>留言中心</strong><div class="leftbgbt2">
+                        </div>
+                    </div>
+                    <div class="cdlist">
+                        <div>
+                            <a href="../historyinfo/historyinfo.html">历史留言信息</a></div>
+                    </div>
+<div class="ta1">
+                        <a href="http://eip.imnu.edu.cn/EIP/" target="_blank"><strong>教学系统</strong></a>
+                        <div class="leftbgbt2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+		    <h2 class="mbx">
+		        留言中心&gt; 历史留言信息</h2>
+			<div class="sw_top">
+				第一章
+			中学信息技术课程教学设计概论
+			</div>
+			<!-- Swiper one start-->
+			  <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide wow fadeInUp">
+			      	<div class="sw_title">
+			      		第一节 中学信息技术教学设计的内涵<br />
+						
+			      	</div>
+			      	<div class="sw_content">
+			      		
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">
+			      	第一节 中学信息技术教学设计的内涵<br />
+						第二节 中学信息技术教学设计的过程模式<br />
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			   <div class="sw_top">
+				第二章 中学信息技术课程学习者分析
+			</div>
+			   <!-- Swiper one start-->
+			  <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide wow fadeInUp">
+			      	<div class="sw_title">
+			      		第二节
+			      	</div>
+			      	<div class="sw_content">
+			      		中学信息技术教学设计的内涵
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp">
+			      	第一节 中学信息技术教学设计的内涵<br />
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>
+						第二节 中学信息技术教学设计的过程模式<br />
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>
+						第三节 高中信息技术教学设计经典案例剖<br />
+			      </div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			   <div class="sw_top">
+				第三章 中学信息技术课程教学目标的编写
+			</div>
+			   <!-- Swiper one start-->
+			  <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide wow fadeInUp">
+			      	<div class="sw_title">
+			      		第三章 
+			      	</div>
+			      	<div class="sw_content">
+			      		中学信息技术课程教学目标的编写
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>第一节 中学信息技术课程教学目标的内涵与功能 </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>第二节 中学信息技术课程目标的分类</div>
+			      <div class="swiper-slide">第三节 中学信息技术课程目标的编写</div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			   <div class="sw_top">
+				第四章 中学信息技术课程教学内容分析
+			</div>
+			   <!-- Swiper one start-->
+			  <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide wow fadeInUp">
+			      	<div class="sw_title">
+			      		第四章
+			      	</div>
+			      	<div class="sw_content">
+			      		中学信息技术课程教学内容分析
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>第一节 中学信息技术课程教学目标的内涵与功能 </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>第二节 中学信息技术课程目标的分类</div>
+			      <div class="swiper-slide">第三节 中学信息技术课程目标的编写</div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			   <div class="sw_top">
+				第五章 中学信息技术课程教学方法的选择
+			</div>
+			   <!-- Swiper one start-->
+			  <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<div class="sw_title">
+			      		第五章 
+			      	</div>
+			      	<div class="sw_content">
+			      		 中学信息技术课程教学方法的选择
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>第一节 中学信息技术课程教学目标的内涵与功能 </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>第二节 中学信息技术课程目标的分类</div>
+			      <div class="swiper-slide">第三节 中学信息技术课程目标的编写</div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			   <div class="sw_top">
+				第六章 中学信息技术课程教学评价
+			</div>
+			   <!-- Swiper one start-->
+			  <div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide wow fadeInUp">
+			      	<div class="sw_title">
+			      		第六章 
+			      	</div>
+			      	<div class="sw_content">
+			      		中学信息技术课程教学评价
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>第一节 中学信息技术课程教学目标的内涵与功能 </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>第二节 中学信息技术课程目标的分类</div>
+			      <div class="swiper-slide">第三节 中学信息技术课程目标的编写</div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			   <div class="sw_top">
+				第七章 中学信息技术课程资源校本课程
+			</div>
+			   <!-- Swiper one start-->
+			  <div class="swiper-container wow fadeInUp">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<div class="sw_title">
+			      		第七章
+			      	</div>
+			      	<div class="sw_content">
+			      		中学信息技术课程资源校本课程开
+			      	</div>
+			      </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='0.5s'>第一节 中学信息技术课程教学目标的内涵与功能 </div>
+			      <div class="swiper-slide wow fadeInUp" data-wow-delay='1s'>第二节 中学信息技术课程目标的分类</div>
+			      <div class="swiper-slide">第三节 中学信息技术课程目标的编写</div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			      <div class="swiper-slide">第三节 高中信息技术教学设计经典案例剖<br /></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			  </div>
+			   <!-- Swiper one end-->
+			  
+			  
+			  
+            </div>
+           
+
+            
+        </div>
+        <div class="footer">
+            <p>
+                &copy;copyright 2018 MTYHF  版权所有</p>
+        </div>
+    </div>
+</body>
+	  <!-- Swiper JS -->
+	  <script src="../Script/historyinfo.js"></script>
+
+	
+	  <!-- Initialize Swiper -->
+	  <script>
+	    var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 3,
+	      spaceBetween: 30,
+	      slidesPerGroup: 3,
+	      loop: true,
+	      loopFillGroupWithBlank: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	    
+	    //		吸顶盒
+			$(window).scroll( function() {
+		        var m =$(window).scrollTop();
+				var n=$('.bgh').height();
+				console.log(n);
+		        if(m>n){
+		            $(".leftbox").addClass("fix");
+//		            $('.main').addClass('keeptop');
+		        }else{
+		            $(".leftbox").removeClass("fix");
+//		            $('.main').removeClass('keeptop');
+		        }
+		    });
+	  </script>
+	  
+
+
+
+
+</html>
